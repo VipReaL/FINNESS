@@ -1,0 +1,13 @@
+/* Обнуление */
+a {
+   text-decoration: none;
+}
+p {
+   margin: 0 0;
+}
+/* Обнуление END */
+
+.header__wrapper {
+   display: flex;
+   justify-content: space-between;
+}
