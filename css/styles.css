@@ -9,12 +9,19 @@ a {
 p {
    margin: 0 0;
 }
+
 /* Обнуление END */
 
+/* header start */
+
 .header {
+   width: 1920px;
+   margin: 0 auto;
+   box-shadow: 0px 6px 8px 0px rgba(68, 68, 68, 0.402);
 }
 .container {
-   width: 1920px;
+   width: 1516px;
+   margin: 0 auto;
 }
 .header__wrapper {
    display: flex;
@@ -29,9 +36,17 @@ p {
    font-weight: bold;
    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
    cursor: pointer; /* TODO: сделать чтобы страница переобновляла себя при нажатие */
+   background: linear-gradient(180deg, #14125F 43.75%, rgba(30, 28, 117, 0.21) 79.17%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-fill-color: transparent; /* FIXME: распространяться только на браузеры –webkit */
+   -webkit-text-stroke-width: 0.9px;
+   -webkit-text-stroke-color: #000000;
+   user-select: none; /* Пользователю запрещено выделять элемент "текст". */
 }
 .nav {
-
+   user-select: none; /* Пользователю запрещено выделять элемент "текст". */
 }
 .nav__link {
    margin-right: 52px;
@@ -51,9 +66,9 @@ p {
    display: flex;
    align-items: center;
    justify-content: center;
-   letter-spacing: ; TODO:
-   background: linear-gradient(180deg, rgba(114, 27, 201, 0.8) 0%, rgba(162, 37, 204, 0.8) 100%);
-   box-shadow: 0 4px 4px rgb(156, 156, 156, 0.70), 0 0 20px rgba(160, 64, 255, 0.80);
+   letter-spacing: 0.1em;
+   background: linear-gradient(180deg, rgba(65, 12, 182, 0.8) 0%, rgba(162, 37, 204, 0.8) 100%);
+   box-shadow: 0 4px 5px 0px rgb(156, 156, 156, 0.70), 0 0 20px rgba(160, 64, 255, 0.80);
 }
 
 .header__button__link {
@@ -61,4 +76,7 @@ p {
    font-weight: bold;
    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
    color: #FFFFFF;
+   user-select: none; /* Пользователю запрещено выделять элемент "текст". */
 }
+
+/* header end */
