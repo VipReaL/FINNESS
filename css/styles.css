@@ -1,4 +1,8 @@
 /* Обнуление */
+body {
+   margin: 0 0;
+   font-family: 'Inter', sans-serif;
+}
 a {
    text-decoration: none;
 }
@@ -7,7 +11,54 @@ p {
 }
 /* Обнуление END */
 
+.header {
+}
+.container {
+   width: 1920px;
+}
 .header__wrapper {
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   height: 115px;
+}
+.header__block {
+}
+.header__logo { /*TODO: сделать линейный градиент*/
+   font-size: 24px;
+   font-weight: bold;
+   text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+   cursor: pointer; /* TODO: сделать чтобы страница переобновляла себя при нажатие */
+}
+.nav {
+
+}
+.nav__link {
+   margin-right: 52px;
+   font-size: 16px;
+   font-weight: 500;
+   text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+   color: #1B1B20;
+}
+.nav__link:last-child {
+   margin-right: 0;
+}
+
+.header__button {
+   height: 51px;
+   width: 219px;
+   border-radius: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: ; TODO:
+   background: linear-gradient(180deg, rgba(114, 27, 201, 0.8) 0%, rgba(162, 37, 204, 0.8) 100%);
+   box-shadow: 0 4px 4px rgb(156, 156, 156, 0.70), 0 0 20px rgba(160, 64, 255, 0.80);
+}
+
+.header__button__link {
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+   color: #FFFFFF;
 }
