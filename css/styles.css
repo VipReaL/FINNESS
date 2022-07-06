@@ -1,19 +1,20 @@
 /* Обнуление */
 body {
-   margin: 0 0;
    font-family: 'Inter', sans-serif;
 }
 a {
-   text-decoration: none;
+   color: #1B1B20;
+   text-decoration: none; /*Отключает подчёркивание*/
+   user-select: none; /* Пользователю запрещено выделять элемент "текст". */
 }
 p {
    margin: 0 0;
 }
-
 /* Обнуление END */
 
-/* header start */
 
+
+/* header start */
 .header {
    width: 1920px;
    margin: 0 auto;
@@ -29,9 +30,10 @@ p {
    align-items: center;
    height: 115px;
 }
-.header__block {
-}
-.header__logo { /*TODO: сделать линейный градиент*/
+
+
+
+.header__logo {
    font-size: 24px;
    font-weight: bold;
    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
@@ -45,20 +47,30 @@ p {
    -webkit-text-stroke-color: #000000;
    user-select: none; /* Пользователю запрещено выделять элемент "текст". */
 }
-.nav {
-   user-select: none; /* Пользователю запрещено выделять элемент "текст". */
+
+
+
+.nav__link--ul {
+   display: flex;
+   margin: 0 0;
+   padding: 0 0;
 }
-.nav__link {
-   margin-right: 52px;
+.nav__link--li {
+   margin: 0 52px 0 0;
    font-size: 16px;
    font-weight: 500;
+   list-style: none;
    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
-   color: #1B1B20;
 }
-.nav__link:last-child {
-   margin-right: 0;
+.nav__link--li:last-child {
+   margin: 0 0 0 0;
 }
 
+
+
+.header__button__link {
+   border-radius: 30px;
+}
 .header__button {
    height: 51px;
    width: 219px;
@@ -70,13 +82,19 @@ p {
    background: linear-gradient(180deg, rgba(65, 12, 182, 0.8) 0%, rgba(162, 37, 204, 0.8) 100%);
    box-shadow: 0 4px 5px 0px rgb(156, 156, 156, 0.70), 0 0 20px rgba(160, 64, 255, 0.80);
 }
-
-.header__button__link {
+.header__button__text {
    font-size: 16px;
    font-weight: bold;
    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
    color: #FFFFFF;
    user-select: none; /* Пользователю запрещено выделять элемент "текст". */
 }
-
 /* header end */
+
+
+
+/*main start*/
+.main {
+   /* background: url(../img/background_01.jpg) no-repeat center top / cover; */
+}
+/*main end*/
