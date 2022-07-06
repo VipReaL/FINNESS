@@ -1,11 +1,27 @@
+@font-face {
+   font-family: "Fredoka-Medium";
+   font-style: normal;
+   font-weight: 500;
+   src: url(../fonts/Fredoka-Medium.ttf);
+}
+
 /* Обнуление */
 body {
    font-family: 'Inter', sans-serif;
+   margin: 0 0;
 }
 a {
    color: #1B1B20;
    text-decoration: none; /*Отключает подчёркивание*/
    user-select: none; /* Пользователю запрещено выделять элемент "текст". */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0 0;
 }
 p {
    margin: 0 0;
@@ -37,12 +53,12 @@ p {
    font-size: 24px;
    font-weight: bold;
    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
-   cursor: pointer; /* TODO: сделать чтобы страница переобновляла себя при нажатие */
+   cursor: pointer;
    background: linear-gradient(180deg, #14125F 43.75%, rgba(30, 28, 117, 0.21) 79.17%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    background-clip: text;
-   text-fill-color: transparent; /* FIXME: распространяться только на браузеры –webkit */
+   text-fill-color: transparent; /* распространяться только на браузеры –webkit */
    -webkit-text-stroke-width: 0.9px;
    -webkit-text-stroke-color: #000000;
    user-select: none; /* Пользователю запрещено выделять элемент "текст". */
@@ -89,12 +105,97 @@ p {
    color: #FFFFFF;
    user-select: none; /* Пользователю запрещено выделять элемент "текст". */
 }
+/* TODO: Добавить анимацию на кнопку */
+/* TODO: Сделать якоря или рабочие сылки */
+/* TODO: Сделать чтобы страница переобновляла себя при нажатие на лого*/
+/* TODO: Сделать стрелку возврата на верх станицы */
 /* header end */
 
 
 
 /*main start*/
 .main {
-   /* background: url(../img/background_01.jpg) no-repeat center top / cover; */
+   width: 1920px;
+   margin: 0 auto;
+}
+.section {
+   display: flex;
+   justify-content: space-between;
+}
+.article__text {
+   width: 743px;
+   margin-top: 116px;
+   margin-left: 202px;
+}
+.title__h1 {
+   margin-bottom: 36px;
+}
+.title__h1 h1 {
+   font-family: 'Fredoka-Medium', sans-serif;
+   font-weight: 500;
+   font-size: 64px;
+   line-height: 120%;
+   color: #252525;
+   text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+}
+.title__p {
+   margin-bottom: 60px;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 120%;
+   color: #626262;
+}
+
+
+
+.article__link {
+   display: inline-flex;
+}
+.article__link--contour {
+   display: flex;
+   align-items: center;
+   height: 66px;
+   width: 224px;
+   margin-right: 23px;
+   border-radius: 6px;
+   background:#000000;
+   color: white;
+}
+.article__link--contour:last-child {
+   margin: 0 0;
+}
+.article__store img {
+   height: 40px;
+   margin-left: 13px;
+   margin-right: 12px;
+}
+.article__store p {
+   font-size: 14px;
+   letter-spacing: 0.05em;
+}
+.article__store span {
+   font-size: 27px;
+}
+.article__play img {
+   height: 40px;
+   margin-left: 16px;
+   margin-right: 13px;
+}
+.article__play p {
+   font-size: 13px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+}
+.article__play span {
+   font-size: 25px;
+   text-transform: none;
+}
+
+
+.article__img {
+}
+.article__img img{
+   margin-top: 40px;
+   height: 694px;
 }
 /*main end*/
