@@ -124,6 +124,7 @@ p {
    display: flex;
    background: url(../img/background_01.jpg) center no-repeat;
    height: 864px;
+   box-shadow: inset 0 0 80px 50px rgb(255, 255, 255);
 }
 .article__text {
    width: 743px;
@@ -196,8 +197,6 @@ p {
 }
 
 
-.article__img {
-}
 .article__img img{
    margin-top: 40px;
    height: 694px;
@@ -242,6 +241,7 @@ p {
 .section__fitcoin__background {
    background: url(../img/background_02.jpg) center no-repeat ;
    height: 884px;
+   box-shadow: inset 0 0 80px 50px rgb(255, 255, 255);
 }
 .section__fitcoin {
    max-width: 744px;
@@ -304,5 +304,136 @@ p {
    font-weight: 400;
    font-size: 24px;
    color: #626262;
+}
+
+
+
+.section__earning {
+   width: 1654px;
+   margin: 0 auto;
+}
+.earning__background {
+   height: 410px;
+   width: 1645px;
+   margin-bottom: 36px;
+   background: url(../img/background_04.png) no-repeat; /* FIXME: Переделать изоображение фона и добавить box-shadow*/
+   background-size: 100% 100%;
+   border-radius: 15px;
+   box-shadow: -10px 15px 20px 5px rgba(178, 178, 178, 0.294);
+}
+.earning__text__h2 {
+   padding: 60px 0 48px 0;
+}
+.earning__text__h2 h2 {
+   text-align: center;
+   font-weight: 700;
+   font-size: 56px;
+   text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+}
+.earning__article__step {
+   max-width: 1430px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+}
+.earning__article {
+   max-width: 400px;
+   height: 175px;
+}
+.earning__article ul {
+   margin-top: 24px;
+   margin-bottom: 0;
+}
+.earning__article__step1 h3 {
+   font-weight: 700;
+   font-size: 32px;
+   text-align: center;
+}
+.earning__article__step1 li {
+   font-weight: 400;
+   font-size: 16px;
+}
+.earning__article__step2 h3 {
+   text-align: center;
+   font-weight: 700;
+   font-size: 32px;
+}   
+.earning__article__step2 li {
+   font-weight: 400;
+   font-size: 16px;
+}
+.earning__article__step3 h3 {
+   text-align: center;
+   font-weight: 700;
+   font-size: 32px;
+}
+.earning__article__step3 li {
+   font-weight: 400;
+   font-size: 16px;
+}
+
+
+
+.fit-mirror___background {
+   background: url(../img/background_05_2.png) center no-repeat;
+   box-shadow: inset 0px 50px 90px 30px rgb(255, 255, 255);
+   background-position: 100% 100%;
+   height: 1510px;
+}
+.fit-mirror__article-h2 {
+   padding-top: 184px;
+   padding-bottom: 80px;
+   text-align: center;
+}
+.fit-mirror__h2 {
+   font-weight: 700;
+   font-size: 56px;
+}
+.fit-mirror__h2 span {
+   color: #D61FDA;
+}
+.fit-mirror__article-SX {
+   display: flex;
+   justify-content: space-between;
+   width: 1500px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.fit-mirror__article {
+   width: 340px;
+   text-align: center;
+}
+.fit-mirror__article h3 {
+   margin-bottom: 28px;
+   font-weight: 700;
+   font-size: 48px;
+   color: #2D2D2D;
+}
+.fit-mirror__article h3 span {
+   color: #D61FDA;
+}
+.fit-mirror__article h4 {
+   margin-bottom: 24px;
+   font-weight: 700;
+   font-size: 28px;
+   color: #2D2D2D;
+}
+.fit-mirror__article p {
+   font-weight: 400;
+   font-size: 24px;
+   color: #2D2D2D;
+}
+
+
+
+
+.section__calculator h2 {
+   margin-top: 191px;
+   font-weight: 700;
+   font-size: 56px;
+   text-align: center;
+}
+.section__calculator h2 span {
+   color: #D61FDA;
 }
 /*main end*/
