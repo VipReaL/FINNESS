@@ -432,8 +432,44 @@ p {
    font-weight: 700;
    font-size: 56px;
    text-align: center;
+   text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
 }
 .section__calculator h2 span {
    color: #D61FDA;
+}
+.ttx-img {
+   display: flex;
+}
+.ttx {
+   display: flex;
+   margin-left: 202px;
+   margin-top: 120px;
+   margin-right: 286px;
+   padding: 60px;
+   max-height: 352px;
+   max-width: 518px;
+   background: url(../img/background_07.jpg) center no-repeat;
+   border-radius: 20px;
+   gap: 12px;
+}
+.ttx_hardware {
+   text-align: right;
+}
+.ttx_hardware p {
+   color: #626262;
+}
+.ttx-color h3 {
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 120%;
+}
+.ttx-color p {
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 120%;
+}
+.ttx-img_img img {
+   margin-top: 80px;
+   max-height: 578px;
 }
 /*main end*/
