@@ -98,7 +98,6 @@ p {
    align-items: center;
    justify-content: center;
    letter-spacing: 0.1em;
-   background: linear-gradient(180deg, rgba(65, 12, 182, 0.8) 0%, rgba(162, 37, 204, 0.8) 100%);
 }
 .header__button__text {
    font-size: 16px;
@@ -280,6 +279,7 @@ p {
 }
 .section__gerl__two {
    display: flex;
+   margin-bottom: 241px;
 }
 .section__gerl {
    margin-top: 24px;
@@ -317,7 +317,6 @@ p {
    width: 1645px;
    margin-bottom: 36px;
    background: url(../img/background_04.png) no-repeat; /* FIXME: Переделать изоображение фона и добавить box-shadow*/
-   background-size: 100% 100%;
    border-radius: 15px;
    box-shadow: -10px 15px 20px 5px rgba(178, 178, 178, 0.294);
 }
@@ -377,7 +376,6 @@ p {
 .fit-mirror___background {
    background: url(../img/background_05_2.png) center no-repeat;
    box-shadow: inset 0px 50px 90px 30px rgb(255, 255, 255);
-   background-position: 100% 100%;
    height: 1510px;
 }
 .fit-mirror__article-h2 {
@@ -427,6 +425,10 @@ p {
 
 
 
+.section__calculator__background {
+   background: url(../img/background_06.jpg) center no-repeat;
+   box-shadow: inset 0px 0px 90px 70px rgb(255, 255, 255);
+}
 .section__calculator h2 {
    margin-top: 191px;
    font-weight: 700;
@@ -438,19 +440,22 @@ p {
    color: #D61FDA;
 }
 .ttx-img {
+   height: 840px;
    display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .ttx {
    display: flex;
    margin-left: 202px;
-   margin-top: 120px;
-   margin-right: 286px;
    padding: 60px;
    max-height: 352px;
    max-width: 518px;
    background: url(../img/background_07.jpg) center no-repeat;
    border-radius: 20px;
-   gap: 12px;
+}
+.ttx_avatar {
+   padding-right: 12px;
 }
 .ttx_hardware {
    text-align: right;
@@ -469,7 +474,38 @@ p {
    line-height: 120%;
 }
 .ttx-img_img img {
-   margin-top: 80px;
-   max-height: 578px;
+   /* margin-top: 80px; */
+   margin-right: 115px;
+   height: 578px;
 }
 /*main end*/
+
+
+
+/*footer start*/
+
+
+.footer {
+   width: 1920px;
+   margin: 0 auto;
+}
+
+.footer__background {
+   background: url(../img/Group_2169.png);
+   background-position-y: -458px;
+}
+
+.footer__content {
+   display: flex;
+   justify-content: space-between;
+}
+.footer__img {
+   margin-left: 149px;
+}
+.footer__info {
+   margin-top: 262px;
+}
+.footer__info h2 {
+
+}
+/*footer end*/
