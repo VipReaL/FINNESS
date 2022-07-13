@@ -98,6 +98,8 @@ p {
    align-items: center;
    justify-content: center;
    letter-spacing: 0.1em;
+   background: linear-gradient(180deg, rgba(65, 12, 182, 0.8) 0%, rgba(162, 37, 204, 0.8) 100%);
+   box-shadow: 0 4px 5px 0px rgb(156, 156, 156, 0.70), 0 0 20px rgba(160, 64, 255, 0.80);
 }
 .header__button__text {
    font-size: 16px;
@@ -504,8 +506,53 @@ p {
 }
 .footer__info {
    margin-top: 262px;
+   margin-right: 200px;
+   text-align: right;
+   color: white;
 }
 .footer__info h2 {
+   margin-bottom: 54px;
+   font-weight: 700;
+   font-size: 56px;
+}
+.footer__info-p {
+   margin-bottom: 40px;
+   font-weight: 400;
+   font-size: 28px;
+}
+.form {
+   display: flex;
+   justify-content: flex-end;
+}
+.footer__input {
+   background: url(../img/footer-input.png) repeat;
+   border: 1px solid #ffffff;
+   border-radius: 25px;
+   width: 337px;
+   font-family: inherit;
+   font-weight: 400;
+   font-size: 32px;
+   color: #FFFFFF;
+}
+.footer__input::placeholder {
+   color: rgba(255, 255, 255, 0.60);
+   font-size: 16px;
 
+   transform:translate3d(17px,-5px,0)
+}
+.footer__input:focus {
+   width: 500px;
+   outline: 0;
+}
+.footer__button__link {
+   margin-left: 32px;
+}
+.footer__button {
+   box-shadow: none;
+}
+.footer__info-p2 {
+   margin-top: 40px;
+   font-weight: 400;
+   font-size: 24px;
 }
 /*footer end*/
